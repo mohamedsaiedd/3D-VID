@@ -51,14 +51,13 @@ npm i 3d-vid
 
 ## Click to full screen video
 <ul>
-   <li> by fire cunction called openFullscreen() the video will be on screen full size with this a tag    </li>
+   <li> Firing function called openFullscreen() the video will be on screen full size with this a tag    </li>
   </ul>
+  
 ```html
   <a onclick="openFullscreen()"> 
    <div class="video-holder" id="showreel">
-   ..
-   ..
-   ..
+  .....
    </div>
   <a/>
 ```

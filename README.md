@@ -11,7 +11,7 @@
 <ul>
  
  <li>
-  This is a <a href="https://www.npmjs.com/package/3d-vid" >npm</a> . package for 3D video animation 
+  This is a <a href="https://www.npmjs.com/package/3d-vid">npm</a> . package for 3D video animation 
  
  </li>
 </ul>

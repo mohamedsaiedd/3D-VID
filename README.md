@@ -16,3 +16,4 @@ first of all you have to add [video-media] class to the video which you want to 
   </video>
 </div>
 ```
+Closes #10

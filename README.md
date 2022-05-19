@@ -2,7 +2,7 @@
 <ul>
  
  <li>
-This is a [NPM](https://www.npmjs.com/package/3d-vid).package for 3D video animation 
+This is a  [GitHub Pages](https://pages.github.com/). package for 3D video animation 
  
  </li>
 </ul>

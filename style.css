@@ -1,0 +1,213 @@
+ body,
+ html {
+     width: 100vw !important;
+     height: 100vh !important;
+     overflow: hidden;
+     background-color: #000000;
+ }
+
+ .video-media {
+     height: 50%;
+     width: 35%;
+     transform-style: preserve-3d;
+     margin: -12px auto;
+     position: fixed;
+     perspective: 2600px;
+     /* transform: translateX(20%) !important; */
+     left: 35%;
+     bottom: 12%;
+     
+ }
+
+ .video-holder {
+     height: 100vh !important;
+     width: 100vw !important;
+     perspective: 2600px;
+     /* background-color: #000; */
+ }
+
+ .show {
+     z-index: 9000;
+ }
+
+ .video-button {
+     transform: translate(-50%, -50%);
+     pointer-events: none;
+     transition: all 0.2s ease-in;
+     transition-property: height, width, background-color, -webkit-backdrop-filter;
+     transition-property: height, width, backdrop-filter, background-color;
+     transition-property: height, width, backdrop-filter, background-color, -webkit-backdrop-filter;
+     position: absolute;
+     font-size: 20px;
+     top: -20px;
+     left: -20px;
+     background-color: black;
+     color: #fff;
+     width: 100px;
+     height: 28px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 1111;
+ }
+
+ /* 
+.corser {
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #8d8d8d60;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+    transition-property: height, width, background-color, -webkit-backdrop-filter;
+    transition-property: height, width, backdrop-filter, background-color;
+    transition-property: height, width, backdrop-filter, background-color, -webkit-backdrop-filter;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+} */
+
+ video::-webkit-media-controls {
+     display: none;
+ }
+
+ .fullScreen {
+     position: absolute;
+     top: 0 !important;
+     right: 0 !important;
+     width: 100vw;
+     height: 100vh;
+     padding-top: 0%;
+     transform-style: flat;
+     background-size: cover;
+     z-index: -1;
+ }
+
+ /* .cursor {
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #8d8d8d60;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+    transition-property: height, width, background-color, -webkit-backdrop-filter;
+    transition-property: height, width, backdrop-filter, background-color;
+    transition-property: height, width, backdrop-filter, background-color, -webkit-backdrop-filter;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    background-color: white !important;
+    border: none;
+    color: #000 !important;
+    width: 100px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+} */
+
+ .hidden {
+     opacity: 0;
+ }
+
+ .widthfull {
+     height: 100% !important;
+     width: 100% !important;
+     transform-style: preserve-3d;
+     padding: 0 !important;
+     margin: 0 !important;
+     position: fixed;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     /* transform: translateX(20%) !important; */
+ }
+
+ .video-holder-mob {
+     cursor: pointer;
+ }
+
+ @media only screen and (max-width: 1370px) {
+     .video-title {
+         font-size: 60px;
+         -webkit-text-stroke-width: 1px;
+         -webkit-text-stroke-color: rgba(255, 255, 255, 0.658);
+     }
+
+     .widthfull {
+         position: fixed !important;
+         top: 0;
+         bottom: 0;
+         width: 200vw;
+         height: 100vh;
+         max-width: 3000px !important;
+     }
+
+     .video-holder-mob {
+         height: 100vh !important;
+         width: 100vw !important;
+         cursor: pointer;
+         z-index: 12;
+         overflow: hidden !important;
+     }
+
+     .video-holder-mob-media {
+         width: 100vw;
+         height: 100vh;
+         cursor: pointer;
+         z-index: 1119999;
+         position: absolute;
+         background-color: #fff;
+         mix-blend-mode: difference;
+     }
+
+     .music-dragging-caption {
+         z-index: -1;
+     }
+
+     .video-holder {
+         display: none;
+     }
+ }
+
+ video.open {
+     z-index: 900000;
+ }
+
+ @media only screen and (min-width: 1370px) {
+     .video-holder-mob {
+         display: none;
+     }
+ }
+
+ .video-title {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: #fff;
+     top: -50%;
+     color: #fff;
+    
+     margin: 0 auto;
+   
+     position: relative;
+     font-size: 4rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.4s ease;
+   
+        }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>threeD</title>
+</head>
+<body>
+     <!-- video///////////////////////////////////////////////////////////////////////////////// -->
+     <div class="video-button" id="button">press</div>
+     <div class="video-holder" id="showreel">
+
+         <!-- <h1 class="music-section-title">showreel</h1>
+         <hr class="music-section-title-hr"> -->
+         <a onclick="openFullscreen()">
+             <div class="video-media">
+                 <video autoplay width="100%" id="myVideo" loop>
+                     <source
+                         src=" https://res.cloudinary.com/m-eight/video/upload/v1618997648/reel_conference_4-3-2021_narxns.mp4">
+                 </video>
+                 <div class="border-layer">
+                     <div class="border-layer-upright"></div>
+                     <div class="border-layer-bottomright"></div>
+                     <div class="border-layer-upleft"></div>
+                     <div class="border-layer-bottomleft"></div>
+                 </div>
+                 <h1 class="video-title">OUR REEL</h1>
+             </div>
+         </a>
+         <!-- <p class="music-dragging-caption">this is our <br> reel movie</p> -->
+
+     </div>
+
+     <div class="video-holder-mob">
+         <a onclick="openFullscreenMobile()">
+             <div class="video-holder-mob-media">
+                 <video controls width="100%" height="100%" loop id="myVideo2">
+                     <source
+                         src=" https://res.cloudinary.com/m-eight/video/upload/v1618997648/reel_conference_4-3-2021_narxns.mp4"
+                         type="video/mp4">
+                 </video>
+
+             </div>
+         </a>
+         <p class="music-dragging-caption">this is our <br> reel movie</p>
+     </div>
+     <div class="cursor1"></div>
+     <div class="cursor2"></div>
+     <!-- <script src="jq.js"></script>
+     <script src="boots.js"></script> -->
+     <script src="script.js"></script>
+</body>
+</html>

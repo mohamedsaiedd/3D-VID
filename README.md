@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-1. [Introduction]
+1. [Introduction](##Introduction)
 2. [Installation](##Installation)
 3. [Usage](##Usage)
 

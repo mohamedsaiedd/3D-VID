@@ -8,7 +8,9 @@ npm i 3d-vid
 ```
 
 ## Usage
-first of all you have to add [video-media] class to the video which you want to rotate it in x-y-z dirictions , and give anoght id to your [video] called myVideo 
+ <ul>
+   <li>#### first of all you have to add [video-media] class to the video which you want to rotate it in x-y-z dirictions , and give anoght id to your [video] called myVideo </li>
+   </ul>
 ```html
 <div class="video-media">
    <video  id="myVideo" >
@@ -16,6 +18,4 @@ first of all you have to add [video-media] class to the video which you want to 
   </video>
 </div>
 ```
-<ul>
-   <li>first</li>
-   </ul>
+  

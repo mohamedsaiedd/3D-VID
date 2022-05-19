@@ -15,7 +15,7 @@ npm i 3d-vid
 
 ## Usage
  <ul>
-   <li> first of all you have to add [video-media] class to the video which you want to rotate it in x-y-z dirictions , and give anoght id to your [video] called myVideo</li>
+   <li> first of all you have to add video-media class to the video which you want to rotate it in x-y-z dirictions , and give anoght id to your video called myVideo</li>
    </ul>
    
 ```html

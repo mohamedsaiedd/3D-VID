@@ -25,7 +25,7 @@ npm i 3d-vid
 <a name="Usage"></a>
 ## Usage
  <ul>
-   <li> first of all you have to add video-media class to the video which you want to rotate it in x-y-z dirictions , and give anoght id to your video called myVideo and for makeing prespective for the z depth wrape this code with video-holder class name div tag with id showreel</li>
+   <li> First of all you have to add video-media class to the video which you want to rotate it in x-y-z dirictions , and give anoght id to your video called myVideo and for makeing prespective for the z depth wrape this code with video-holder class name div tag with id showreel</li>
    </ul>
    
 ```html
@@ -38,7 +38,7 @@ npm i 3d-vid
 ```
 
 <ul>
-   <li> you can also add some text above the video to make it in z depth by adding video-title to your video-media scope </li>
+   <li> You can also add some text above the video to make it in z depth by adding video-title to your video-media scope </li>
   </ul>
   
 ```html
@@ -52,7 +52,7 @@ npm i 3d-vid
 
 
 <ul>
-   <li> make a new mouse cursor by adding video-button class name   </li>
+   <li> Make a new mouse cursor by adding video-button class name   </li>
   </ul>
   
 ```html

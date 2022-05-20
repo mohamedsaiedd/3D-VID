@@ -49,24 +49,26 @@ showreel.addEventListener('mousemove', function(e) {
     mouseCursor.style.top = e.pageY + "px";
     mouseCursor.style.left = e.pageX + "px";
 
-    cursor1.classList.add('hidden');
-    cursor2.classList.add('hidden');
+    cursor1.classList.add('hidden-cursour');
+    cursor2.classList.add('hidden-cursour');
 
 })
 
 showreel.addEventListener('mouseleave', function(e) {
 
-    cursor1.classList.remove('hidden');
-    cursor2.classList.remove('hidden');
+    // cursor1.classList.remove('hidden');
+    // cursor2.classList.remove('hidden');
 
 })
 
 
 document.addEventListener('keydown', function(e) {
 
-    if (e.key == "Escape") {
+    if (e.key === "Escape") {
         openFullscreen();
-        document.querySelector('.border-layer').classList.remove('movies-layer-hidden');
+        
+        // document.querySelector('.border-layer').classList.remove('movies-layer-hidden');
+       
 
     }
 })
@@ -84,9 +86,9 @@ document.addEventListener('keydown', function(e) {
 //video resize
 // let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 elem.muted = true;
-container.addEventListener(touchEvent, openFullscreen);
-media.addEventListener(touchEvent, openFullscreen);
-media.addEventListener("touchstart", openFullscreen);
+// container.addEventListener(touchEvent, openFullscreen);
+// media.addEventListener(touchEvent, openFullscreen);
+// media.addEventListener("touchstart", openFullscreen);
 
 
 
@@ -97,22 +99,25 @@ function openFullscreen() {
     titleText.classList.toggle("hidden")
     container.classList.toggle("widthfull")
     media.classList.toggle("widthfull");
+    // media.style.
+    media.classList.toggle('video-media-widthfull')
 
 
     if (container.classList.contains('widthfull')) {
         container.requestFullscreen();
-        document.querySelector('.border-layer').classList.add('movies-layer-hidden')
+        // document.querySelector('.border-layer').classList.add('movies-layer-hidden')
 
 
     } else {
         document.exitFullscreen();
-        document.querySelector('.border-layer').classList.remove('movies-layer-hidden')
+        // document.querySelector('.border-layer').classList.remove('movies-layer-hidden')
     }
 
 
     //cursor pointer
     if (mouseCursor.innerHTML == "press") {
         mouseCursor.innerHTML = "close";
+        
 
 
         container.addEventListener("mousemove", (e) => {
@@ -125,12 +130,13 @@ function openFullscreen() {
         mouseCursor.innerHTML = "press";
         elem.currentTime = 2;
         container.addEventListener("mousemove", (e) => {
-            let xAxis = (media.offsetWidth / 2 + e.pageX * 4) / 55;
-            let yAxis = (media.offsetHeight / 2 - e.pageY) / 20;
+            let xAxis = (media.offsetWidth  - e.pageX   ) / -15;
+            let yAxis = (media.offsetHeight - e.pageY) / 20;
             media.style.transform = `rotateY(${xAxis }deg) rotateX(${yAxis }deg)`;
 
 
         });
+      
         elem.muted = true;
     }
 }
@@ -154,9 +160,9 @@ function openFullscreenMobile() {
 
 
 
-exports.printMsg = function() {
-    console.log("This is a message from the demo package");
-  }
+// exports.printMsg = function() {
+//     console.log("This is a message from the demo package");
+//   }
 
 
 

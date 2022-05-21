@@ -1,6 +1,6 @@
 {
   "name": "3d-vid",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "3d video rotating package",
   "main": "script.js",
   "scripts": {
@@ -8,11 +8,15 @@
   },
   "author": "",
   "license": "ISC",
-  "repository": {
+  "repository": { 
     "type": "git",
     "url": "https://github.com/mohamedsaiedd/3D-VID"
   },
-  "Homepage": {
-    "url": "https://3d-vid.netlify.app/"
-  }
+  "Homepage":"https://3d-vid.netlify.app/",
+  "keywords": [
+    "3d-video",
+    "three-video",
+    "video animation ",
+    "rotating"
+  ]
 }
